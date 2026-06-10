@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const franklinGothic = localFont({
+  src: "../assets/fonts/Franklin Gothic Heavy Regular.ttf",
+  variable: "--font-franklin-gothic",
+  weight: "900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${franklinGothic.variable} ${franklinGothic.className} h-full antialiased`}
+    >
       <body className="min-h-full bg-black text-white">
         <Header />
         {children}
