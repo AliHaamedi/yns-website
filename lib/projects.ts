@@ -96,8 +96,6 @@ export const trustedLogos = [
 export const socialLinks = [
   { id: "x", label: "X", href: "#" },
   { id: "telegram", label: "Telegram", href: "#" },
-  { id: "instagram", label: "Instagram", href: "#" },
   { id: "linkedin", label: "LinkedIn", href: "#" },
   { id: "email", label: "Email", href: "mailto:younes@gmail.com" },
-  { id: "discord", label: "Discord", href: "#" },
 ];

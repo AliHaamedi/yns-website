@@ -24,9 +24,7 @@ export function Footer() {
               href={social.href}
               className="flex flex-col items-center gap-2 text-white/80 transition-colors hover:text-white"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30">
-                <SocialIcon id={social.id} />
-              </span>
+              <SocialIcon id={social.id} className="h-10 w-10" />
               <span className="text-xs text-white/60">{social.label}</span>
             </a>
           ))}
