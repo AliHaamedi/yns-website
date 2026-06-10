@@ -45,10 +45,12 @@ export function Contact() {
             ↓
           </span>
           <a
-            href="mailto:younes@gmail.com"
+            href="mailto:web3yns@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xl font-medium text-white transition-opacity hover:opacity-80 md:text-3xl"
           >
-            younes@gmail.com
+            web3yns@gmail.com
           </a>
         </div>
       </div>

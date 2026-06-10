@@ -87,8 +87,12 @@ export const projects: ProjectTile[] = [
 ];
 
 export const socialLinks = [
-  { id: "x", label: "X", href: "#" },
-  { id: "telegram", label: "Telegram", href: "#" },
-  { id: "linkedin", label: "LinkedIn", href: "#" },
-  { id: "email", label: "Email", href: "mailto:younes@gmail.com" },
+  { id: "x", label: "X", href: "https://x.com/ynsgh_" },
+  { id: "telegram", label: "Telegram", href: "https://t.me/gh_yns" },
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/younes-ghazanfar/",
+  },
+  { id: "email", label: "Email", href: "mailto:web3yns@gmail.com" },
 ];

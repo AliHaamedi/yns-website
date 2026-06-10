@@ -22,6 +22,8 @@ export function Footer() {
             <a
               key={social.id}
               href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-col items-center gap-2 text-white/80 transition-colors hover:text-white"
             >
               <SocialIcon id={social.id} className="h-10 w-10" />
