@@ -86,13 +86,6 @@ export const projects: ProjectTile[] = [
   },
 ];
 
-export const trustedLogos = [
-  "Phoenix",
-  "Solana Foundation",
-  "Jupiter",
-  "Meteora",
-];
-
 export const socialLinks = [
   { id: "x", label: "X", href: "#" },
   { id: "telegram", label: "Telegram", href: "#" },

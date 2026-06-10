@@ -22,6 +22,22 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-franklin-gothic);
+  --animate-marquee: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
 }
 
 html {

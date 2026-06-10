@@ -1,4 +1,4 @@
-import { trustedLogos } from "@/lib/projects";
+import { TrustedByMarquee } from "@/components/ui/TrustedByMarquee";
 
 export function TrustedByLogos({ className = "" }: { className?: string }) {
   return (
@@ -6,16 +6,7 @@ export function TrustedByLogos({ className = "" }: { className?: string }) {
       <p className="mb-6 text-center text-xs tracking-widest text-white/50 uppercase md:mb-8">
         Trusted by
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-16">
-        {trustedLogos.map((name) => (
-          <span
-            key={name}
-            className={`text-sm font-medium text-white/40 md:text-base ${name === "Phoenix" || name === "Solana Foundation" ? "hidden md:inline" : ""}`}
-          >
-            {name}
-          </span>
-        ))}
-      </div>
+      <TrustedByMarquee />
     </div>
   );
 }

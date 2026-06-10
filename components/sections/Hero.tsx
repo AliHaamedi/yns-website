@@ -14,7 +14,8 @@ export function Hero() {
         className="pointer-events-none absolute right-1/4 bottom-1/3 h-[300px] w-[300px] rounded-full bg-teal-500/15 blur-[100px]"
         aria-hidden
       />
-      <div className="relative z-10 mx-auto max-w-4xl text-center">
+
+      <div className="relative z-10 mx-auto w-full max-w-4xl text-center">
         <h1 className="mb-5 text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
           I give Solana brands something to feel
         </h1>
@@ -23,9 +24,11 @@ export function Hero() {
           something to say
         </p>
         <GradientButton>Book a free call</GradientButton>
+      </div>
 
-        <TrustedByLogos className="mt-10 md:hidden" />
+      <TrustedByLogos className="relative z-10 mt-10 -mx-5 w-[calc(100%+2.5rem)] md:hidden" />
 
+      <div className="relative z-10 mx-auto w-full max-w-4xl text-center">
         <div className="mt-10 flex flex-col items-center gap-2 md:mt-16">
           <span className="text-white/50" aria-hidden>
             ↓
