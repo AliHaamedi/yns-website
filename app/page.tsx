@@ -11,7 +11,6 @@ export default function Home() {
       <Hero />
       <TrustedBy />
       <ProjectsGrid />
-      <LetsTalk />
       <Contact />
       <Footer />
     </main>
