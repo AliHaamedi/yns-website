@@ -1,15 +1,13 @@
 import { ProjectCard } from "@/components/ui/ProjectCard";
-import { projects } from "@/lib/projects";
-
-const previewIds = ["zero-friction", "conta-48", "billboard-hall", "c-logo"];
+import { projectRows } from "@/lib/projects";
 
 export function HeroProjectPreview() {
-  const previewProjects = projects.filter((p) => previewIds.includes(p.id));
+  const previewItems = projectRows[0].items;
 
   return (
     <div className="mt-12 flex flex-col gap-3 md:hidden">
-      {previewProjects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
+      {previewItems.map((project, index) => (
+        <ProjectCard key={project.id} project={project} priority={index === 0} />
       ))}
     </div>
   );
