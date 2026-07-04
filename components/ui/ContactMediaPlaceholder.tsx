@@ -4,14 +4,18 @@ type ContactMediaPlaceholderProps = {
   /** Set when a showreel GIF or video asset is ready */
   src?: string;
   poster?: string;
+  className?: string;
 };
 
 export function ContactMediaPlaceholder({
   src,
   poster,
+  className = "aspect-square w-full",
 }: ContactMediaPlaceholderProps) {
   return (
-    <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-[#141414]">
+    <div
+      className={`relative overflow-hidden bg-[#141414] ${className}`}
+    >
       {src ? (
         src.endsWith(".mp4") || src.endsWith(".webm") ? (
           <video

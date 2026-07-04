@@ -1,44 +1,49 @@
-import { GradientButton } from "@/components/ui/GradientButton";
+import { ArrowDownIcon } from "@/components/ui/ArrowDownIcon";
 import { ContactMediaPlaceholder } from "@/components/ui/ContactMediaPlaceholder";
+import { GradientButton } from "@/components/ui/GradientButton";
 
 export function Contact() {
   return (
-    <section className="relative px-5 pt-28 pb-16 md:px-8 md:pt-32 md:pb-24 lg:px-12">
-      <div
-        className="pointer-events-none absolute top-1/3 left-0 h-[400px] w-[500px] -translate-y-1/2 rounded-full bg-teal-500/10 blur-[120px]"
-        aria-hidden
-      />
+    <section className="border-t border-white/10 px-5 pt-28 pb-16 md:px-8 md:pt-32 md:pb-24 lg:px-12">
+      <div className="relative mx-auto max-w-7xl">
+        <div
+          className="pointer-events-none absolute top-0 left-0 h-[500px] w-[600px] rounded-full bg-teal-500/10 blur-[120px]"
+          aria-hidden
+        />
 
-      <div className="relative mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-stretch md:gap-16 lg:gap-20">
-        <div className="flex flex-col justify-between gap-10 md:min-h-[480px] lg:min-h-[520px]">
-          <div>
-            <h1 className="mb-6 text-3xl leading-tight font-bold text-white md:text-4xl lg:text-5xl">
+        <div className="relative grid gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-start md:gap-16 lg:gap-20">
+          <div className="flex flex-col gap-10 md:gap-12">
+            <h1 className="text-[clamp(3rem,10vw,4rem)] leading-[1.04] tracking-normal text-white">
               Have a project in mind? Let&apos;s talk.
             </h1>
-            <p className="max-w-md text-base leading-relaxed text-white/70 md:text-lg">
+
+            <p className="max-w-3xl font-duplet text-[clamp(1.25rem,2.5vw,2rem)] leading-[1.1] text-white">
               If you&apos;re in need of great Motion Design, Art Direction,
               Character Animation or Cel Animation, don&apos;t hesitate to reach
               out.
             </p>
-            <GradientButton className="mt-8">Book a free call</GradientButton>
+
+            <div>
+              <GradientButton>Book a free call</GradientButton>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <ArrowDownIcon className="size-7 text-white" />
+              <a
+                href="mailto:web3yns@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-duplet text-[clamp(1.25rem,2.5vw,2rem)] leading-[1.1] text-white transition-opacity hover:opacity-80"
+              >
+                web3yns@gmail.com
+              </a>
+            </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <span className="text-white/50" aria-hidden>
-              ↓
-            </span>
-            <a
-              href="mailto:web3yns@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xl font-medium text-white transition-opacity hover:opacity-80 md:text-2xl lg:text-3xl"
-            >
-              web3yns@gmail.com
-            </a>
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden md:mx-0 md:max-w-none">
+            <ContactMediaPlaceholder className="h-full w-full" />
           </div>
         </div>
-
-        <ContactMediaPlaceholder />
       </div>
     </section>
   );

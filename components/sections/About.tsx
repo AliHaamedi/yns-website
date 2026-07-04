@@ -1,47 +1,51 @@
 import Image from "next/image";
+import { ArrowDownIcon } from "@/components/ui/ArrowDownIcon";
 
 export function About() {
   return (
-    <section className="px-5 pt-28 pb-16 md:px-8 md:pt-32 md:pb-24 lg:px-12">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid gap-12 md:grid-cols-2 md:items-start md:gap-16">
-          <div>
-            <h2 className="mb-6 text-3xl font-bold text-white leading-tight tracking-tight sm:text-4xl md:text-8xl lg:text-9xl">
+    <section className="border-t border-white/10 px-5 pt-28 pb-16 md:px-8 md:pt-32 md:pb-24 lg:px-12">
+      <div className="relative mx-auto max-w-7xl">
+        <div
+          className="pointer-events-none absolute top-0 left-0 h-[500px] w-[600px] rounded-full bg-teal-500/10 blur-[120px]"
+          aria-hidden
+        />
+
+        <div className="relative grid gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-start md:gap-16 lg:gap-20">
+          <div className="flex flex-col gap-10 md:gap-12">
+            <h1 className="text-[clamp(3rem,10vw,5rem)] leading-[1.04] tracking-normal text-white">
               About Me
-            </h2>
-            <p className="text-base leading-relaxed text-white/75 md:text-lg">
-              I&apos;m a freelance motion and graphic designer helping brands in
-              the Solana ecosystem and beyond tell stories that land. From
-              launch films to social motion systems, I combine craft with
-              clarity so your audience feels something real.
+            </h1>
+
+            <p className="max-w-3xl font-duplet text-[clamp(1.25rem,2.5vw,2rem)] leading-[1.1] text-white">
+              I&apos;m Younes, a freelance motion and graphic designer who found
+              a natural home in the Solana ecosystem. Animation has always been
+              my way of making sense of the world — blending rhythm, design, and
+              narrative into visuals that feel as alive as the projects behind
+              them.
             </p>
+
+            <div className="flex flex-col gap-4">
+              <h2 className="text-[clamp(1.25rem,2.5vw,2rem)] leading-[1.1] tracking-normal text-white uppercase">
+                Roles you can hire me for
+              </h2>
+              <ArrowDownIcon className="text-white size-7" />
+              <p className="max-w-2xl font-duplet text-[clamp(1.25rem,2.5vw,1.4rem)] leading-[1.1] text-white">
+                Motion graphics. Launch videos. Visual storytelling. Graphic
+                design — wherever your brand needs to show up.
+              </p>
+            </div>
           </div>
 
-          <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl md:max-w-none">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden md:mx-0 md:max-w-none">
             <Image
               src="/images/about-portrait.png"
               alt="Younes — motion designer portrait with a cloud for a head"
               fill
               className="object-cover object-center"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 40vw"
               priority
             />
           </div>
-        </div>
-
-        <div className="mt-16 md:mt-24">
-          <div className="mb-4 flex items-center gap-2">
-            <span className="text-white/50" aria-hidden>
-              ↓
-            </span>
-            <h3 className="text-sm font-bold tracking-widest text-white uppercase md:text-base">
-              Roles you can hire me for
-            </h3>
-          </div>
-          <p className="max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
-            Motion graphics. Launch videos. Visual storytelling. Graphic design
-            — wherever your brand needs to show up.
-          </p>
         </div>
       </div>
     </section>

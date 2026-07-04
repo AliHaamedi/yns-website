@@ -17,6 +17,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-franklin-gothic);
+  --font-duplet: ui-sans-serif, system-ui, -apple-system, sans-serif;
   --animate-marquee: marquee 40s linear infinite;
 }
 
