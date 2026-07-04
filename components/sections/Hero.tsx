@@ -15,12 +15,13 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-4xl text-center">
-        <h1 className="mb-5 text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-          I give Solana brands something to feel
+      <div className="relative z-10 mx-auto w-full max-w-7xl text-center">
+        <h1 className="mb-5 text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-8xl lg:text-9xl">
+          I give Solana brands <br />
+          something to feel
         </h1>
-        <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
-          Motion design rooted in the Solana ecosystem, built for brands with
+        <p className="mx-auto mb-10 max-w-7xl text-base leading-relaxed text-white/75 md:text-4xl mt-10">
+          Motion design rooted in the Solana ecosystem, built <br /> for brands with
           something to say
         </p>
         <GradientButton>Book a free call</GradientButton>

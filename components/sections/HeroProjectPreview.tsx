@@ -1,13 +1,13 @@
-import { ProjectCard } from "@/components/ui/ProjectCard";
-import { projectRows } from "@/lib/projects";
+import { WorkCard } from "@/components/ui/WorkCard";
+import { getWorkRows } from "@/lib/works";
 
 export function HeroProjectPreview() {
-  const previewItems = projectRows[0].items;
+  const previewItems = getWorkRows()[0].items;
 
   return (
     <div className="mt-12 flex flex-col gap-3 md:hidden">
-      {previewItems.map((project, index) => (
-        <ProjectCard key={project.id} project={project} priority={index === 0} />
+      {previewItems.map((work, index) => (
+        <WorkCard key={work.id} work={work} priority={index === 0} />
       ))}
     </div>
   );

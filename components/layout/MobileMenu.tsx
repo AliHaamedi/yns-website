@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { GradientButton } from "@/components/ui/GradientButton";
 
 const links = [
-  { href: "/#work", label: "Work" },
+  { href: "/works", label: "Work" },
   { href: "/about", label: "About" },
   { href: "/contact-us", label: "Contact" },
 ];

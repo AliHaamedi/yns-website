@@ -3,7 +3,7 @@ import { Logo } from "@/components/ui/Logo";
 import { MobileMenu } from "./MobileMenu";
 
 const navLinks = [
-  { href: "/#work", label: "Work" },
+  { href: "/works", label: "Work" },
   { href: "/about", label: "About" },
 ];
 

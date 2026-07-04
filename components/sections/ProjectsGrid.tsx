@@ -1,5 +1,5 @@
-import { ProjectCard } from "@/components/ui/ProjectCard";
-import { projectRows } from "@/lib/projects";
+import { WorkCard } from "@/components/ui/WorkCard";
+import { getWorkRows } from "@/lib/works";
 
 const columnClass: Record<2 | 3, string> = {
   2: "grid-cols-1 sm:grid-cols-2",
@@ -7,6 +7,8 @@ const columnClass: Record<2 | 3, string> = {
 };
 
 export function ProjectsGrid() {
+  const rows = getWorkRows();
+
   return (
     <section
       id="work"
@@ -23,15 +25,15 @@ export function ProjectsGrid() {
         </div>
 
         <div className="flex flex-col gap-4 md:gap-5">
-          {projectRows.map((row) => (
+          {rows.map((row) => (
             <div
               key={row.id}
               className={`grid gap-4 md:gap-5 ${columnClass[row.columns]}`}
             >
-              {row.items.map((project, index) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
+              {row.items.map((work, index) => (
+                <WorkCard
+                  key={work.id}
+                  work={work}
                   priority={row.id === "A" && index === 0}
                 />
               ))}
