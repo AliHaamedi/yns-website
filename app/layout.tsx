@@ -26,7 +26,7 @@ export default function RootLayout({
       lang="en"
       className={`${franklinGothic.variable} ${franklinGothic.className} h-full antialiased`}
     >
-      <body className="min-h-full bg-black text-white">
+      <body className="min-h-full overflow-x-hidden bg-black text-white">
         <Header />
         {children}
       </body>

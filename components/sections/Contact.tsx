@@ -4,15 +4,15 @@ import { GradientButton } from "@/components/ui/GradientButton";
 
 export function Contact() {
   return (
-    <section className="border-t border-white/10 px-5 pt-28 pb-16 md:px-8 md:pt-32 md:pb-24 lg:px-12">
-      <div className="relative mx-auto max-w-7xl">
+    <section className="overflow-hidden border-t border-white/10 px-5 pt-28 pb-16 md:px-8 md:pt-32 md:pb-24 lg:px-12">
+      <div className="relative mx-auto max-w-7xl overflow-hidden">
         <div
-          className="pointer-events-none absolute top-0 left-0 h-[500px] w-[600px] rounded-full bg-teal-500/10 blur-[120px]"
+          className="pointer-events-none absolute top-0 -left-1/4 h-[500px] w-[min(600px,100vw)] rounded-full bg-teal-500/10 blur-[120px]"
           aria-hidden
         />
 
-        <div className="relative grid gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-start md:gap-16 lg:gap-20">
-          <div className="flex flex-col gap-10 md:gap-12">
+        <div className="relative grid min-w-0 gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-start md:gap-16 lg:gap-20">
+          <div className="min-w-0 flex flex-col gap-10 md:gap-12">
             <h1 className="text-[clamp(3rem,10vw,4rem)] leading-[1.04] tracking-normal text-white">
               Have a project in mind? Let&apos;s talk.
             </h1>
@@ -40,7 +40,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden md:mx-0 md:max-w-none">
+          <div className="relative mx-auto min-w-0 aspect-[4/5] w-full max-w-md overflow-hidden md:mx-0 md:max-w-none">
             <ContactMediaPlaceholder className="h-full w-full" />
           </div>
         </div>

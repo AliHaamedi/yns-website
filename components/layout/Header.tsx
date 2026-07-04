@@ -1,11 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
+import { contactLink, navLinks } from "@/lib/navigation";
 import { MobileMenu } from "./MobileMenu";
-
-const navLinks = [
-  { href: "/works", label: "Work" },
-  { href: "/about", label: "About" },
-];
 
 export function Header() {
   return (
@@ -24,10 +20,10 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/contact-us"
+            href={contactLink.href}
             className="rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-opacity hover:opacity-90"
           >
-            Contact
+            {contactLink.label}
           </Link>
         </nav>
 
