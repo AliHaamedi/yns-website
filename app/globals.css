@@ -10,12 +10,7 @@
     #22d3ee 65%,
     #84cc16 100%
   );
-  --gradient-cta: linear-gradient(
-    90deg,
-    #2dd4bf 0%,
-    #84cc16 50%,
-    #a3e635 100%
-  );
+  --gradient-cta: linear-gradient(90deg, #2dd4bf 0%, #84cc16 50%, #a3e635 100%);
 }
 
 @theme inline {

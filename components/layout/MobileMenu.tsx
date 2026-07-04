@@ -7,7 +7,7 @@ import { GradientButton } from "@/components/ui/GradientButton";
 const links = [
   { href: "/#work", label: "Work" },
   { href: "/about", label: "About" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/contact-us", label: "Contact" },
 ];
 
 export function MobileMenu() {
@@ -57,7 +57,7 @@ export function MobileMenu() {
                 {link.label}
               </Link>
             ))}
-            <GradientButton href="/#contact" onClick={() => setOpen(false)}>
+            <GradientButton href="/contact-us" onClick={() => setOpen(false)}>
               Book a free call
             </GradientButton>
           </nav>

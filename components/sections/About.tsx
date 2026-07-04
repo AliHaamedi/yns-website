@@ -11,9 +11,9 @@ export function About() {
             </h2>
             <p className="text-base leading-relaxed text-white/75 md:text-lg">
               I&apos;m a freelance motion and graphic designer helping brands in
-              the Solana ecosystem and beyond tell stories that land. From launch
-              films to social motion systems, I combine craft with clarity so your
-              audience feels something real.
+              the Solana ecosystem and beyond tell stories that land. From
+              launch films to social motion systems, I combine craft with
+              clarity so your audience feels something real.
             </p>
           </div>
 
@@ -39,8 +39,8 @@ export function About() {
             </h3>
           </div>
           <p className="max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
-            Motion graphics. Launch videos. Visual storytelling. Graphic design —
-            wherever your brand needs to show up.
+            Motion graphics. Launch videos. Visual storytelling. Graphic design
+            — wherever your brand needs to show up.
           </p>
         </div>
       </div>

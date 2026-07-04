@@ -11,8 +11,8 @@ export function Footer() {
             Let&apos;s Talk
           </h2>
           <p className="mx-auto mb-8 max-w-lg text-sm leading-relaxed text-white/70 md:text-base">
-            Got a project or idea that needs creative execution? I&apos;d love to
-            elevate your brand and deliver value.
+            Got a project or idea that needs creative execution? I&apos;d love
+            to elevate your brand and deliver value.
           </p>
           <GradientButton>Book a free call</GradientButton>
         </div>

@@ -1,12 +1,7 @@
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { projects } from "@/lib/projects";
 
-const previewIds = [
-  "zero-friction",
-  "conta-48",
-  "billboard-hall",
-  "c-logo",
-];
+const previewIds = ["zero-friction", "conta-48", "billboard-hall", "c-logo"];
 
 export function HeroProjectPreview() {
   const previewProjects = projects.filter((p) => previewIds.includes(p.id));

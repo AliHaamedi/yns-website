@@ -15,7 +15,11 @@ export type TrustedByLogo = {
 
 export const trustedByLogos: TrustedByLogo[] = [
   { id: "phoenix", name: "Phoenix", src: trustPhoenix },
-  { id: "solana-foundation", name: "Solana Foundation", src: solanaFoundationLogo },
+  {
+    id: "solana-foundation",
+    name: "Solana Foundation",
+    src: solanaFoundationLogo,
+  },
   { id: "jupiter", name: "Jupiter", src: trustJupiter },
   { id: "meteora", name: "Meteora", src: trustMeteora },
   { id: "drip", name: "Drip", src: trustDrip },

@@ -3,7 +3,10 @@ import { projects } from "@/lib/projects";
 
 export function ProjectsGrid() {
   return (
-    <section id="work" className="scroll-mt-20 px-5 py-12 md:px-8 md:py-20 lg:px-12">
+    <section
+      id="work"
+      className="scroll-mt-20 px-5 py-12 md:px-8 md:py-20 lg:px-12"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 hidden flex-col items-center gap-2 text-center md:mb-14 md:flex">
           <span className="text-white/50" aria-hidden>
@@ -19,9 +22,12 @@ export function ProjectsGrid() {
           {projects
             .filter(
               (p) =>
-                !["zero-friction", "conta-48", "billboard-hall", "c-logo"].includes(
-                  p.id,
-                ),
+                ![
+                  "zero-friction",
+                  "conta-48",
+                  "billboard-hall",
+                  "c-logo",
+                ].includes(p.id),
             )
             .map((project) => (
               <ProjectCard key={project.id} project={project} />

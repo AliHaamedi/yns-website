@@ -24,7 +24,7 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/#contact"
+            href="/contact-us"
             className="rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-opacity hover:opacity-90"
           >
             Contact

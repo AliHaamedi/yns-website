@@ -8,7 +8,7 @@ type GradientButtonProps = {
 };
 
 export function GradientButton({
-  href = "/#contact",
+  href = "/contact-us",
   children,
   className = "",
   onClick,
