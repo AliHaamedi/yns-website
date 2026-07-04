@@ -1,5 +1,4 @@
 import { GradientButton } from "@/components/ui/GradientButton";
-import { HeroProjectPreview } from "./HeroProjectPreview";
 import { TrustedByLogos } from "./TrustedBy";
 
 export function Hero() {
@@ -28,19 +27,6 @@ export function Hero() {
       </div>
 
       <TrustedByLogos className="relative z-10 mt-10 -mx-5 w-[calc(100%+2.5rem)] md:hidden" />
-
-      <div className="relative z-10 mx-auto w-full max-w-4xl text-center">
-        <div className="mt-10 flex flex-col items-center gap-2 md:mt-16">
-          <span className="text-white/50" aria-hidden>
-            ↓
-          </span>
-          <p className="max-w-xs text-sm text-white/70">
-            Join me for a quick tour of my best projects
-          </p>
-        </div>
-
-        <HeroProjectPreview />
-      </div>
     </section>
   );
 }

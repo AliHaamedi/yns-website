@@ -1,3 +1,4 @@
+import { ArrowDownIcon } from "@/components/ui/ArrowDownIcon";
 import { WorkCard } from "@/components/ui/WorkCard";
 import { getWorkRows } from "@/lib/works";
 
@@ -15,11 +16,9 @@ export function ProjectsGrid() {
       className="scroll-mt-20 px-5 py-12 md:px-8 md:py-20 lg:px-12"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 flex flex-col items-center gap-2 text-center md:mb-14">
-          <span className="text-white/50" aria-hidden>
-            ↓
-          </span>
-          <p className="max-w-xs text-sm text-white/70 md:max-w-none md:text-base">
+        <div className="mb-10 flex flex-col items-start gap-2 text-center md:mb-14">
+          <ArrowDownIcon className="size-7 text-white" />
+          <p className="max-w-xs text-lg text-left text-white md:max-w-none md:text-2xl">
             Join me for a quick tour of my best projects
           </p>
         </div>

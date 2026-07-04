@@ -1,3 +1,4 @@
+import { ArrowDownIcon } from "@/components/ui/ArrowDownIcon";
 import { GradientButton } from "@/components/ui/GradientButton";
 import { WorkMediaPlaceholder } from "@/components/ui/WorkMediaPlaceholder";
 import type { Work } from "@/lib/works";
@@ -16,10 +17,8 @@ export function WorkDetail({ work }: WorkDetailProps) {
         />
 
         <div className="mt-10 md:mt-12">
-          <span className="mb-4 block text-white/50" aria-hidden>
-            ↓
-          </span>
-          <p className="max-w-3xl border-b border-white/20 pb-8 text-base leading-relaxed text-white/80 md:text-lg">
+          <ArrowDownIcon className="size-7 text-white mb-6" />
+          <p className="max-w-5xl border-b border-white/20 pb-8 text-base leading-relaxed text-white/80 md:text-xl">
             {work.description}
           </p>
 

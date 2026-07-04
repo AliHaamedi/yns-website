@@ -6,7 +6,7 @@ export function About() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 md:grid-cols-2 md:items-start md:gap-16">
           <div>
-            <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+            <h2 className="mb-6 text-3xl font-bold text-white leading-tight tracking-tight sm:text-4xl md:text-8xl lg:text-9xl">
               About Me
             </h2>
             <p className="text-base leading-relaxed text-white/75 md:text-lg">
