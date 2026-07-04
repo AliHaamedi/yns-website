@@ -7,18 +7,16 @@ type GradientButtonProps = {
   onClick?: () => void;
 };
 
+const buttonClass =
+  "inline-flex items-center justify-center rounded-full border border-white bg-transparent px-6 py-3 text-sm font-medium text-white/60 transition-all duration-300 ease-in-out hover:border-white hover:bg-white hover:text-black md:px-8 md:py-3.5 md:text-base";
+
 export function GradientButton({
   href = "/contact-us",
   children,
   className = "",
   onClick,
 }: GradientButtonProps) {
-  const wrapperClass = `inline-block rounded-full bg-[image:var(--gradient-cta)] p-[1px] ${className}`;
-  const inner = (
-    <span className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 md:px-8 md:py-3.5 md:text-base">
-      {children}
-    </span>
-  );
+  const classNames = `${buttonClass} ${className}`;
 
   const isExternal =
     href.startsWith("http") ||
@@ -32,16 +30,16 @@ export function GradientButton({
         onClick={onClick}
         target="_blank"
         rel="noopener noreferrer"
-        className={wrapperClass}
+        className={classNames}
       >
-        {inner}
+        {children}
       </a>
     );
   }
 
   return (
-    <Link href={href} onClick={onClick} className={wrapperClass}>
-      {inner}
+    <Link href={href} onClick={onClick} className={classNames}>
+      {children}
     </Link>
   );
 }
