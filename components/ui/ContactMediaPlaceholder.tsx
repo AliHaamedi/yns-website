@@ -1,4 +1,5 @@
 import { YnsLogoMark } from "@/components/ui/YnsLogoMark";
+import { withBasePath } from "@/lib/base-path";
 
 type ContactMediaPlaceholderProps = {
   /** Set when a showreel GIF or video asset is ready */
@@ -20,15 +21,15 @@ export function ContactMediaPlaceholder({
         src.endsWith(".mp4") || src.endsWith(".webm") ? (
           <video
             className="h-full w-full object-cover"
-            src={src}
-            poster={poster}
+            src={withBasePath(src)}
+            poster={poster ? withBasePath(poster) : undefined}
             controls
             playsInline
           />
         ) : (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={src}
+            src={withBasePath(src)}
             alt="Showreel preview"
             className="h-full w-full object-cover"
           />

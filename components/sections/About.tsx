@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowDownIcon } from "@/components/ui/ArrowDownIcon";
+import { withBasePath } from "@/lib/base-path";
 
 export function About() {
   return (
@@ -38,7 +39,7 @@ export function About() {
 
           <div className="relative mx-auto min-w-0 aspect-[4/5] w-full max-w-md overflow-hidden md:mx-0 md:max-w-none">
             <Image
-              src="/images/about-portrait.png"
+              src={withBasePath("/images/about-portrait.png")}
               alt="Younes — motion designer portrait with a cloud for a head"
               fill
               className="object-cover object-center"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/base-path";
 import type { Work } from "@/lib/works";
 
 type WorkCardProps = {
@@ -22,7 +23,7 @@ export function WorkCard({
     >
       <article className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-[#141414]">
         <Image
-          src={work.thumbnail}
+          src={withBasePath(work.thumbnail)}
           alt={work.title}
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"

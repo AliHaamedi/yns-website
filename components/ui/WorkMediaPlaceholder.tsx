@@ -1,3 +1,5 @@
+import { withBasePath } from "@/lib/base-path";
+
 type WorkMediaPlaceholderProps = {
   src?: string;
   poster?: string;
@@ -15,15 +17,15 @@ export function WorkMediaPlaceholder({
         src.endsWith(".mp4") || src.endsWith(".webm") ? (
           <video
             className="h-full w-full object-cover"
-            src={src}
-            poster={poster}
+            src={withBasePath(src)}
+            poster={poster ? withBasePath(poster) : undefined}
             controls
             playsInline
           />
         ) : (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={src}
+            src={withBasePath(src)}
             alt={title}
             className="h-full w-full object-cover"
           />
