@@ -20,6 +20,7 @@
   --font-duplet: ui-sans-serif, system-ui, -apple-system, sans-serif;
   --animate-marquee: marquee 40s linear infinite;
   --animate-hero-glow: hero-glow-pulse 9s ease-in-out infinite;
+  --animate-bubble-in: bubble-in 0.7s cubic-bezier(0.22, 1.15, 0.36, 1) both;
 }
 
 @keyframes marquee {
@@ -41,9 +42,25 @@
   }
 }
 
+@keyframes bubble-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.68);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
-  .animate-hero-glow {
+  .animate-hero-glow,
+  .animate-bubble-in {
     animation: none;
   }
 }
