@@ -15,7 +15,7 @@ export function Hero() {
       />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl text-center">
-        <h1 className="mb-5 text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-8xl lg:text-9xl">
+        <h1 className="mb-5 cursor-default select-none text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:text-8xl lg:text-9xl">
           I give Solana brands <br />
           something to feel
         </h1>
