@@ -16,6 +16,8 @@ export function WorkCard({
   showMeta = false,
   className = "",
 }: WorkCardProps) {
+  const showHoverMeta = !showMeta;
+
   return (
     <Link
       href={`/works/${work.id}`}
@@ -31,9 +33,25 @@ export function WorkCard({
           priority={priority}
         />
         <div
-          className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10"
+          className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20"
           aria-hidden
         />
+
+        {showHoverMeta && (
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+            aria-hidden
+          >
+            <div className="bg-gradient-to-t from-black/85 via-black/50 to-transparent px-5 pt-16 pb-5 md:px-6 md:pb-6">
+              <p className="truncate text-xl font-bold text-white md:text-2xl">
+                {work.title}
+              </p>
+              <p className="mt-1 truncate text-sm text-white/75 md:text-base">
+                {work.summary}
+              </p>
+            </div>
+          </div>
+        )}
       </article>
 
       {showMeta && (
