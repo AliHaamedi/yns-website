@@ -19,6 +19,7 @@
   --font-sans: var(--font-franklin-gothic);
   --font-duplet: ui-sans-serif, system-ui, -apple-system, sans-serif;
   --animate-marquee: marquee 40s linear infinite;
+  --animate-hero-glow: hero-glow-pulse 9s ease-in-out infinite;
 }
 
 @keyframes marquee {
@@ -30,8 +31,19 @@
   }
 }
 
+@keyframes hero-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee {
+  .animate-marquee,
+  .animate-hero-glow {
     animation: none;
   }
 }
