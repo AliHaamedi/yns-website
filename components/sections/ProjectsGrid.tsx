@@ -37,12 +37,12 @@ export function ProjectsGrid() {
                 cardIndex += 1;
 
                 return (
-                  <RevealBubble key={work.id} delay={delay}>
+                  <RevealOnScroll key={work.id} delay={delay}>
                     <WorkCard
                       work={work}
                       priority={row.id === "A" && index === 0}
                     />
-                  </RevealBubble>
+                  </RevealOnScroll>
                 );
               })}
             </div>

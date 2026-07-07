@@ -27,7 +27,7 @@ export function Hero() {
         <RevealOnScroll
           as="p"
           delay={120}
-          className="mx-auto mt-10 mb-10 max-w-7xl text-base leading-relaxed text-white/75 md:text-4xl"
+          className="mx-auto mt-10 mb-10 max-w-7xl text-base leading-relaxed text-white/75 md:text-4xl cursor-default select-none"
         >
           Motion design rooted in the Solana ecosystem, built <br /> for brands
           with something to say
